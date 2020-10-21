@@ -4,10 +4,12 @@ import edu.cnm.deepdive.simplediceware.service.PassphraseGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/simple")
 public class DicewareController {
 
   private static final String LENGTH_PARAMETER = "length";
